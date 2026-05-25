@@ -109,6 +109,17 @@ window.onload = () => {
             musicaFundo.volume =
                 volumeSalvo / 100;
         }
+
+        if (somAcerto) {
+
+            somAcerto.volume =
+                volumeSalvo / 100;
+        }
+
+        if (somErro) {
+            somErro.volume =  
+                volumeSalvo / 100;
+        }
     }
 };
 
@@ -416,20 +427,20 @@ const perguntasFaceis = [
 
     {
     
-        pergunta: "Qual a capital do Brasil?",
+        pergunta: "Qual a o maior estado do Brasil?",
 
         respostas: [
             "Brasília",
             "Rio de Janeiro",
             "São Paulo",
-            "Bahia"
+            "Amazonas"
         ],
 
-        correta: "Brasília"
+        correta: "Amazonas"
     },
 
     {
-        pergunta: "Quanto é 2 + 2?",
+        pergunta: "Quanto é 2 x 2?",
 
         respostas: [
             "2",
@@ -442,7 +453,7 @@ const perguntasFaceis = [
     },
 
     {
-        pergunta: "Qual animal late?",
+        pergunta: "Qual animal Nada?",
 
         respostas: [
             "Gato",
@@ -451,7 +462,7 @@ const perguntasFaceis = [
             "Leão"
         ],
 
-        correta: "Cachorro"
+        correta: "Peixe"
     },
 
     {
@@ -468,7 +479,7 @@ const perguntasFaceis = [
     },
 
     {
-        pergunta: "Quantos dias tem uma semana?",
+        pergunta: "Quantos meses tem um semestre?",
 
         respostas: [
             "5",
@@ -477,7 +488,7 @@ const perguntasFaceis = [
             "8"
         ],
 
-        correta: "7"
+        correta: "6"
     }
 
 ];
@@ -745,20 +756,20 @@ const perguntasMedias = [
     },
 
     {
-        pergunta: "Quem descobriu o Brasil?",
+        pergunta: "Quem descobriu a América?",
 
         respostas: [
-            "Cabral",
+            "Cristóvão Colombo",
             "Dom Pedro",
             "Tiradentes",
             "Lula"
         ],
 
-        correta: "Cabral"
+        correta: "Cristóvão Colombo"
     },
 
     {
-        pergunta: "Qual linguagem estiliza sites?",
+        pergunta: "Qual linguagem é a base de um site?",
 
         respostas: [
             "CSS",
@@ -767,20 +778,20 @@ const perguntasMedias = [
             "Java"
         ],
 
-        correta: "CSS"
+        correta: "HTML"
     },
 
     {
-        pergunta: "Quanto é 9 x 8?",
+        pergunta: "Quanto é 10 x 10?",
 
         respostas: [
-            "72",
+            "100",
             "81",
             "64",
             "56"
         ],
 
-        correta: "72"
+        correta: "100"
     },
 
     {
@@ -1113,7 +1124,7 @@ const perguntasDificeis = [
     },
 
     {
-        pergunta: "Maior oceano?",
+        pergunta: "Qual o menor oceano?",
 
         respostas: [
             "Pacífico",
@@ -1122,20 +1133,20 @@ const perguntasDificeis = [
             "Ártico"
         ],
 
-        correta: "Pacífico"
+        correta: "Ártico"
     },
 
     {
-        pergunta: "Quanto é 25²?",
+        pergunta: "Quanto é 50 x 50?",
 
         respostas: [
             "625",
             "525",
-            "225",
-            "725"
+            "2510",
+            "2500"
         ],
 
-        correta: "625"
+        correta: "2500"
     }
 
 ];
@@ -1461,7 +1472,7 @@ function finalizarQuiz() {
 
                 <button class="Classif-Button" onclick="window.location.href='Classificacao.html'">
 
-                    Ranhing
+                    Ranking
 
                 </button>
 
