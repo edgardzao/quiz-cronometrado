@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<!--             Prova 2
+Disciplina: Ferramenta de Desenvolvimento Web
+Faculdade: Fatec Americana  -  4° Semestre
+Nomes: Edgard Petri - RA: 00409602423041
+       Thiago Andre da Silva - RA: 0040962423022 -->
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta viewport content="width=device-width" initial-scale="1.0" />
+    <title>Jogo QUIZ</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script src="../script.js" defer></script>
+</head>
+<body class="Tema-Azul">
+    <header>
+        <h1>Jogo - Quiz Cronometrado</h1>
+    </header>
+    <main class="Tela-Jogo">
+        <section class="Topo">
+            <div class="Info">
+                <h2>Nivel:</h2>
+                <p id="Nivel">Facil</p>
+            </div>
+            <div class="Info">
+                <h2>Pontos:</h2>
+                <p id="Pontos"> 0 </p>
+            </div>
+            <div class="Info">
+                <h2>Tempo:</h2>
+                <p id="Tempo"> 60 </p>
+            </div>
+            <div class="Info">
+                <h2>Pergunta:</h2>
+                <p id="Contador"> 1/10 </p>
+            </div>
+        </section>
+        <section class="Pergunta-Box">
+            <h1 id="Pergunta"> Pergunta </h1>
+        </section>
+        <section class="Pergunta-Box">
+            <div class="Respostas" id="Respostas"> Resposta </div>
+        </section>
+        <section class="Resultado">
+            <h1 id="ResultadoFinal"></h1>
+        </section>
+        <audio id="MusicaFundo" loop>
+
+            <source src="../audio/musica.mp3" type="audio/mp3">
+
+        </audio>
+
+        <audio id="SomAcerto">
+
+            <source src="../audio/acerto.mp3" type="audio/mp3">
+
+        </audio>
+
+        <audio id="SomErro">
+
+            <source src="../audio/erro.mp3" type="audio/mp3">
+
+        </audio>
+
+        <audio id="SomClique">
+
+            <source src="../audio/clique.mp3" type="audio/mp3">
+
+        </audio>
+    </main>
+    <footer>
+        <p>
+            Desenvolvido por Edgard Petri e Thiago Andre da Silva <br/>
+            Prova 2 .&copy; 2026 Todos os direitos reservados.
+        </p>
+    </footer>
+</body>
+</html>
